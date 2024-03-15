@@ -1,0 +1,92 @@
+.signInContainer{
+  background-color: #FCFCFC;
+}
+.signInLayout{
+  display: flex;
+  justify-content: space-between;
+}
+.signInLeft{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.leftInfo{
+  margin-top: 14rem;
+}
+.title{
+  padding-bottom: 1.5rem;
+}
+.title span{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #808191;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.formWrapper{
+  display: flex;
+  flex-direction: column;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #11142D;
+}
+.input input{
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 10px;
+  border: 1px solid #E4E4E4;
+  background-color: #FCFCFC;
+  outline: none;
+}
+::placeholder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  color: #808191;
+  line-height: 24px;
+}
+.signInWithBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 1rem;
+  padding: 10px 23px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid #E4E4E4;
+  background-color: #FCFCFC;
+  cursor: pointer;
+}
+.signInWithBtn span{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #11142D;
+}
+.dontHaveAcc{
+  margin-top: 1rem;
+  text-align: center;
+}
+.signInRight{
+  background-image: url("../../assets/form img.png");
+  background-size: cover;
+  min-height: 100vh;
+  width: 720px;
+}

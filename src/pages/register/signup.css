@@ -1,0 +1,99 @@
+.signUpContainer {
+  background-color: #fcfcfc;
+}
+.signUpLayout {
+  display: flex;
+  justify-content: space-between;
+}
+.signUpLeft {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.leftInfo {
+  margin-top: 6rem;
+}
+.title {
+  padding-bottom: 1.5rem;
+}
+.title span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #808191;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #11142d;
+}
+.input input{
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid #e4e4e4;
+  background-color: #fcfcfc;
+  outline: none;
+}
+input.input-error{
+border-color: #fc8181;
+}
+::placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  color: #808191;
+  line-height: 24px;
+}
+.signUpWithBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 1rem;
+  padding: 10px 23px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid #e4e4e4;
+  background-color: #fcfcfc;
+  cursor: pointer;
+}
+.signUpWithBtn span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #11142d;
+}
+.alreadyHaveAcc {
+  margin-top: 1rem;
+  text-align: center;
+}
+.alreadyHaveAcc p {
+  font-weight: 500;
+  font-size: 14px;
+}
+.signUpRight {
+  background-image: url("../../assets/form img.png");
+  background-size: cover;
+  min-height: 100vh;
+  width: 720px;
+}

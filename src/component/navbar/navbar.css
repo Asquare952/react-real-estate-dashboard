@@ -1,0 +1,273 @@
+header {
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #fcfcfc;
+}
+.menuBar {
+  display: none;
+}
+.menuIcon {
+  font-size: 28px;
+}
+.hearderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 20px;
+}
+.desktopLogo {
+  display: flex;
+  align-items: center;
+}
+.mobileLogo {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.mobileLogo .logo {
+  margin-right: 50px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.logo img {
+  width: 34.54px;
+}
+.logo span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34.15px;
+  color: #11142d;
+}
+.logoAndSearchInput {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+.searchInput {
+  position: relative;
+}
+.searchInput input {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.8rem;
+  padding-right: 15rem;
+  border-radius: 8px;
+  background: #f4f4f4;
+  outline: none;
+  border: none;
+}
+.searchIcon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  z-index: 1;
+  color: #808191;
+}
+.mobileSearchInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobileSearchInput input {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.8rem;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.searchIconMobile {
+  position: absolute;
+  top: 23px;
+  left: 25px;
+  z-index: 1;
+  color: #808191;
+}
+.profileAndNotification {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.notificationBell {
+  font-size: 20px;
+}
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profileAvater {
+  font-size: 35px;
+}
+.nameAndRole {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.12px;
+  color: #11142d;
+}
+.nameAndRole span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.12px;
+  color: #808191;
+}
+.profile-dropdown-container {
+  position: absolute;
+  padding: 15px;
+  top: 74px;
+  right: 50px;
+  z-index: 10;
+  border-radius: 14px;
+  background-color: #fcfcfc;
+  transition: 350ms ease;
+}
+.profile-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+.profile-dropdown-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.profile-dropdown-content a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #808191;
+}
+.profile-dropdown-content  a:hover {
+  font-weight: 500;
+color: #475be8;
+}
+.profile-dropdown-content  a:active {
+  font-weight: 500;
+  color: #475be8;
+}
+.side-nav-desktop {
+  position: fixed;
+  width: 250px;
+  padding: 25px 30px;
+  background: #fcfcfc;
+  height: 100%;
+}
+.sideBarContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+.sideBarContent ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sideBarContent a {
+  width: 200px;
+  border-radius: 12px;
+  padding: 16px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22.31px;
+  color: #808191;
+}
+.sideBarContent a:hover {
+  color: #fcfcfc;
+  background-color: #475be8;
+}
+.sideBarContent a:active {
+  color: #fcfcfc;
+  background-color: #475be8;
+}
+@media screen and (max-width: 915px) {
+  .hearderContent {
+    padding: 13px 5px;
+  }
+  .desktopLogo {
+    display: none;
+  }
+  .menuBar {
+    display: block;
+  }
+  .searchInput input {
+    display: none;
+  }
+  .mobileSearchInput input {
+    width: 100%;
+  }
+  .searchInputMobile {
+    position: absolute;
+    width: 100%;
+    padding: 16px;
+    top: 0;
+    z-index: 10;
+    border-radius: 14px;
+    background: #fcfcfc;
+    transition: 0.3s ease;
+  }
+  .searchIcon {
+    position: absolute;
+    font-size: 20px;
+    top: -13px;
+    left: -130px;
+    color: #808191;
+  }
+}
+@media screen and (max-width: 840px) {
+  .side-nav-desktop {
+    display: none;
+  }
+  .side-nav-mobile {
+    position: fixed;
+    top: 0;
+    width: 250px;
+    padding: 25px 30px;
+    background: #fcfcfc;
+    height: 100vh;
+    left: -100%;
+    z-index: 1;
+    transition: 850ms ease-in-out;
+  }
+  .side-nav-mobile.active {
+    left: 0;
+    transition: 850ms ease-in-out;
+  }
+}
+@media screen and (max-width: 540px) {
+  .nameAndRole {
+    display: none;
+  }
+  .profile-dropdown-container {
+  right: 10px
+}
+}
+@media screen and (max-width: 360px) {
+  .searchIcon {
+    position: absolute;
+    font-size: 20px;
+    top: -12px;
+    left: -110px;
+    color: #808191;
+  }
+}
+@media screen and (max-width: 280px) {
+  .searchIcon {
+    position: absolute;
+    font-size: 20px;
+    top: -13px;
+    left: -75px;
+    color: #808191;
+  }
+}
