@@ -97,7 +97,7 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to='/login'>
+                  <Link to='/signin'>
                     <img src={LogoutIcon} alt="" />
                     <span>Logout</span>
                   </Link>
