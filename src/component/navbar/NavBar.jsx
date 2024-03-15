@@ -85,19 +85,19 @@ const NavBar = () => {
             <div className="profile-dropdown-content">
               <ul>
                 <li>
-                  <Link to="/dashboard">
+                  <Link to='#'>
                     <img src={ProfileDropdownIcon} alt="" />
                     <span>Edit Profile</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="property">
+                  <Link to='#'>
                     <img src={SettingsIcon} alt="" />
                     <span>Settings</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="agent">
+                  <Link to='/login'>
                     <img src={LogoutIcon} alt="" />
                     <span>Logout</span>
                   </Link>

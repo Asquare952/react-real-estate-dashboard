@@ -24,7 +24,7 @@ const SignIn = () => {
       <section className="signInContainer">
         <div className="signInLayout">
           <div className="signInLeft">
-            <div className="leftInfo">
+            <div className="signInleftInfo">
               <div className="title">
                 <h3>Welcome back</h3>
                 <span>Welcome back! Please enter your details.</span>
