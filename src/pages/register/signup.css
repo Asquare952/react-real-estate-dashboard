@@ -11,7 +11,7 @@
   padding: 0 1rem;
 }
 .leftInfo {
-  margin-top: 4rem;
+  margin-top: 8.5rem;
 }
 .title {
   padding-bottom: 1.5rem;
@@ -98,6 +98,9 @@ border-color: #fc8181;
   width: 720px;
 }
 @media screen and (max-width: 1024px) {
+  .leftInfo {
+  margin-top: 7rem;
+}
   .signUpRight {
   display: none;
 }
