@@ -1,0 +1,21 @@
+/* .mobileSearchInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobileSearchInput input {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.8rem;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.searchIconMobile {
+  position: absolute;
+  top: 23px;
+  left: 25px;
+  z-index: 1;
+  color: #808191;
+} */

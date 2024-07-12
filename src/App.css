@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: "sideBar header header header" "sideBar main main main";
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  grid-area: header;
+  padding: 0.5rem 0.5rem;
+  background-color: #ffffff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+.search-input-menubar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.desktop-search-input {
+  display: none;
+}
+.notification-profile-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.notification-icon-container {
+  position: relative;
+}
+.red-dot {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 5px;
+  border-radius: 100%;
+  padding: 5px;
+  background-color: #eb5757;
+}
+.notification-bell-icon {
+  max-width: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile-avarter img {
+  max-width: 40px;
+  width: 100%;
+  cursor: pointer;
+}
+.name-role {
+  display: none;
+}
+.name {
+  font-weight: 600px;
+  font-size: 14px;
+  line-height: 19.12px;
+  color: #11142d;
+}
+.role {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 19.12px;
+  color: #808191;
+}
+@media screen and (min-width: 1024px) {
+  .menubar-icon-container {
+    display: none;
   }
 }
+@media screen and (min-width: 820px) {
+  .name-role {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+  }
+  .mobile-searchicon-container {
+    display: none;
+  }
+  .desktop-search-input {
+    position: relative;
+    display: block;
+  }
+  .desktop-search-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #808191;
+    cursor: pointer;
+  }
+  .desktop-search-input input {
+    border: none;
+    background-color: #f4f4f4;
+    outline: none;
+    padding: 6px 150px 6px 25px;
+    border-radius: 8px;
+  }
+}
+/* header style end */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* sideBar style  */
+.sideBar{
+    grid-area: sideBar;
+}
+.desktopLogo {
+  display: flex;
+  align-items: center;
+}
+.mobileLogo {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.mobileLogo .logo {
+  margin-right: 50px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.logo img {
+  width: 34.54px;
+}
+.logo span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34.15px;
+  color: #11142d;
+}
+.side-nav-desktop {
+  position: fixed;
+  width: 250px;
+  padding: 25px 30px;
+  background: #fcfcfc;
+  height: 100%;
+}
+.sideBarContent {
   display: flex;
   flex-direction: column;
+  gap: 1.7rem;
+}
+.sideBarContent ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sideBarContent a {
+  width: 200px;
+  border-radius: 12px;
+  padding: 16px 16px;
+  border-radius: 12px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22.31px;
+  color: #808191;
 }
+.sideBarContent a:hover {
+  color: #fcfcfc;
+  background-color: #475be8;
+}
+.sideBarContent a:active {
+  color: #fcfcfc;
+  background-color: #475be8;
+}
+/* sideBar style end */
 
-.App-link {
-  color: #61dafb;
+/* main syle */
+.main{
+    grid-area: main;
+    background-color: #FCFCFC;
+    height: 100vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* main syle end */
