@@ -2,7 +2,7 @@ import "./App.css";
 import Hearder from "./component/hearder/header";
 import SideBar from "./component/sideBar/sideBar";
 import Main from "./component/main/main";
-import Router from "./router";
+// import Router from "./router";
 import { useState } from "react";
 import SideBarData from "./utils/sidebardata";
 function App() {
@@ -11,7 +11,7 @@ function App() {
   
   return (
       <section className="grid-container">
-        <Router />
+        {/* <Router /> */}
         <Hearder />
         <SideBar aside={sidBarLinks} setValue={setValue} value={value}/>
         <Main aside={sidBarLinks} value={value}/>

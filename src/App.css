@@ -7,6 +7,8 @@
 }
 .header {
   grid-area: header;
+  position: sticky;
+  top: 0;
   padding: 0.5rem 0.5rem;
   background-color: #ffffff;
 }
@@ -106,20 +108,25 @@
 /* header style end */
 
 /* sideBar style  */
-.sideBar{
-    grid-area: sideBar;
+.sideBar {
+  grid-area: sideBar;
+  position: fixed;
 }
-.desktopLogo {
+.sidebar-content {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
-.mobileLogo {
+.logo-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-right: 50px;
+  padding: 15px 30px 0px 10px;
+  margin-bottom: 25px;
 }
-.mobileLogo .logo {
-  margin-right: 50px;
+.close-icon{
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 .logo {
   display: flex;
@@ -135,27 +142,19 @@
   line-height: 34.15px;
   color: #11142d;
 }
-.side-nav-desktop {
-  position: fixed;
-  width: 250px;
-  padding: 25px 30px;
-  background: #fcfcfc;
-  height: 100%;
-}
-.sideBarContent {
+/* .nav-container {
+  margin-top: 1rem;
+} */
+.nav-container .sidebar-link {
   display: flex;
   flex-direction: column;
-  gap: 1.7rem;
 }
-.sideBarContent ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.links {
+  padding: 20px 20px 20px 20px;
 }
-.sideBarContent a {
+.links a {
   width: 200px;
   border-radius: 12px;
-  padding: 16px 16px;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -164,21 +163,29 @@
   font-size: 16px;
   line-height: 22.31px;
   color: #808191;
+  padding: 10px;
 }
-.sideBarContent a:hover {
+.links a:hover {
   color: #fcfcfc;
   background-color: #475be8;
 }
-.sideBarContent a:active {
+.active-links a {
   color: #fcfcfc;
   background-color: #475be8;
 }
 /* sideBar style end */
 
 /* main syle */
-.main{
-    grid-area: main;
-    background-color: #FCFCFC;
-    height: 100vh;
+.main {
+  grid-area: main;
+  background: #fcfcfc;
+  height: 100%;
+
+}
+.main-container{
+  max-width: 1300px;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 1rem;
 }
 /* main syle end */

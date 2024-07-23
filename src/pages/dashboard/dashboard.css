@@ -1,0 +1,443 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dashboard-title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34.15px;
+  color: #11142d;
+}
+.dashboard-head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dashboard-head-cards {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-radius: 15px;
+  padding: 10px 22px 10px 22px;
+  background-color: #ffffff;
+}
+.title-result {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.12px;
+  color: #808191;
+}
+.result {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.78px;
+  color: #11142d;
+}
+@media screen and (min-width: 1024px) {
+  .dashboard-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/* dashboard grid */
+.dashboard-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+.grid-item {
+  border-radius: 15px;
+  padding: 30px 20px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .dashboard-grid-container {
+    display: grid;
+  }
+  .total-revenue-span-2 {
+    grid-column: span 2;
+  }
+}
+/* dashboard grid end */
+
+/* total revenue style */
+.total-revenue-span-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.total-revenue-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-revenue-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24.59px;
+  color: #11142d;
+}
+.total-revenue-head-right {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+.eclipse-1 {
+  width: 13px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #6c5dd3;
+}
+.eclipse-2 {
+  width: 13px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #cfc8ff;
+}
+.last-month {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.last-month p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16.39px;
+  color: #808191;
+}
+.running-month {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.running-month p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16.39px;
+  color: #808191;
+}
+.total-revenue-icon {
+  color: #808191;
+}
+.total-revenue-content {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+.revenue h4 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38.25px;
+  color: #11142d;
+}
+.revenue-percentage {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.percentage-month {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.percentag-rise {
+  width: 20px;
+  padding: 5px 6px 5px 6px;
+  border-radius: 20px;
+  background-color: #475be8;
+  color: #fcfcfc;
+}
+.arrow-up {
+  width: 8px;
+}
+.percentage {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20.49px;
+  color: #475be8;
+}
+.month {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808191;
+}
+/* total revenue end */
+
+/* property referrals style */
+.property-referrals {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.property-referrals-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24.59px;
+  color: #11142d;
+}
+.property-referrals-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.refferals {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.progress-label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.referral {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.86px;
+  color: #11142d;
+}
+.number-of-referral {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.86px;
+  color: #11142d;
+}
+/* property referrals end */
+
+/* top agents style */
+.top-agent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.top-agent-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.top-agent-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24.59px;
+  color: #11142d;
+}
+.view-all-btn {
+  cursor: pointer;
+  border: 1px solid #e4e4e4;
+  padding: 9px 15px 9px 15px;
+  border-radius: 8px;
+  color: #808191;
+  background-color: #ffffff;
+}
+.top-agent-agents-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.option-menu-icon {
+  cursor: pointer;
+}
+.top-agent-agents-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.agent-image-name-role-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.agent-name-role {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.agent-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.12px;
+  color: #11142d;
+}
+.agent-role {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.39px;
+  color: #808191;
+}
+/* top agent end */
+
+/* customers */
+.customers-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+hr {
+  width: 100%;
+}
+.option-menu-icon {
+  color: #808191;
+}
+.total-customers-container {
+  margin-bottom: 3rem;
+}
+.total-customers {
+  display: flex;
+  justify-content: space-between;
+}
+.total-customers-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.total-customers-content p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16.39px;
+  color: #808191;
+}
+.total-customers-figure {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.total-customers h4 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35.52px;
+  color: #11142d;
+}
+.total-customers span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16.39px;
+  color: #2ed480;
+}
+.new-customers-container {
+  margin-top: 3rem;
+}
+.new-customers {
+  display: flex;
+  justify-content: space-between;
+}
+.new-customers-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.new-customers-content p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16.39px;
+  color: #808191;
+}
+.new-customers-figure {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.new-customers h4 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35.52px;
+  color: #11142d;
+}
+.new-customers span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16.39px;
+  color: #2ed480;
+}
+/* customers end*/
+
+/* latest sales style */
+.latest-sales {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.latest-sales-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.latest-sales-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24.59px;
+  color: #11142d;
+}
+.arrow-right-icon {
+  cursor: pointer;
+  color: #808191;
+}
+.latest-sales-sales-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.latest-sales-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apartment-name-locaion-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.apartment-name-location {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.agartment-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #11142d;
+}
+.location {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #808191;
+}
+.price {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24.59px;
+  color: #2f80ed;
+}
+/* latest sales end */
+
+/* property list style*/
+.property-list-container {
+  /* margin-top: 2rem; */
+  padding: 20px;
+  background-color: #ffffff;
+}
+.property-list-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.property-list-cartigories {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* property list end*/

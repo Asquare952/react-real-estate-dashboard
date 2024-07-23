@@ -5,7 +5,11 @@ function main({ aside, value }) {
   return (
     <main className="main">
       {main.map((main, index) => {
-        return <div key={index}>{main}</div>;
+        return (
+          <div className="main-container" key={index}>
+            {main}
+          </div>
+        );
       })}
     </main>
   );
