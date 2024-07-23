@@ -16,7 +16,7 @@ const sibeBarData = [
   {
     id: 1,
     title: "Dashboard",
-    path: "/dashboard",
+    path: "/",
     icon: <RxDashboard />,
     main: [<Dashboard />],
   },

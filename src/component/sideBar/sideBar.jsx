@@ -1,6 +1,7 @@
 import React from "react";
 import "./sideBar.css";
 import Logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 // import { useState } from "react";
 // import SideBarData from "./utils/sidebardata";
 import { MdClose } from "react-icons/md";
@@ -15,7 +16,7 @@ function SideBar({ aside, value, setValue }) {
               <img src={Logo} alt="logo" />
               <span>Yariga</span>
             </a>
-            <MdClose className="close-icon"/>
+            <MdClose className="close-icon" />
           </div>
 
           <nav className="nav-container">
@@ -27,10 +28,10 @@ function SideBar({ aside, value, setValue }) {
                     key={item.id}
                     onClick={() => setValue(index)}
                   >
-                    <a href={item.path}>
+                    <Link to={item.path}>
                       {item.icon}
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </li>
                 );
               })}

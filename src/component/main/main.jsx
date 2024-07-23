@@ -1,6 +1,6 @@
 import React from "react";
 
-function main({ aside, value }) {
+function main({ aside, value,}) {
   const { main } = aside[value];
   return (
     <main className="main">
@@ -8,6 +8,7 @@ function main({ aside, value }) {
         return (
           <div className="main-container" key={index}>
             {main}
+            {/* {children} */}
           </div>
         );
       })}
