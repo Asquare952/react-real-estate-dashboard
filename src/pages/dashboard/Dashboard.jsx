@@ -10,12 +10,16 @@ import { IoIosArrowRoundUp } from "react-icons/io";
 import { SlOptionsVertical } from "react-icons/sl";
 import BtnPropertyList from "../../component/propertylistBtns/ButtonPropertyList";
 import propertyList from "./utils/propertyListData";
+import Slideer from "../../component/slider/Slideer";
+import Properties from "../../component/properties/Properties";
+
 const Dashboard = () => {
   const [cardData, setcardData] = useState(HeadData);
   const [agent, setAgent] = useState(TopAgent);
   const [sales, setSales] = useState(LatestSales);
   const [referral, setReferral] = useState(PropertyReferral);
-  const [properties, setProperties] = useState(propertyList);
+  const [property, setProperty] = useState(propertyList);
+  const [value, setValue] = useState(0);
   return (
     <>
       <section className="dashboard-container">
@@ -212,9 +216,18 @@ const Dashboard = () => {
           <div className="property-list-container">
             <div className="property-list-head">
               <h4 className="property-list-title">Dashboard</h4>
-              <div className="property-list-cartigories">
-                <BtnPropertyList/>
+              <div className="property-list-cartigories-main-container">
+                <BtnPropertyList
+                  propertyList={property}
+                  value={value}
+                  setValue={setValue}
+                />
               </div>
+            </div>
+
+            <div className="property-list-main">
+              <Properties propertyList={property} value={value} />
+              <Slideer />
             </div>
           </div>
         </section>

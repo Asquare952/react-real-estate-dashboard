@@ -20,7 +20,7 @@ function App() {
     // </section>
     <Layout>
       <Routes>
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/property" element={<Property />} />
         <Route path="/agent" element={<Agent />} />
         <Route path="/review" element={<Review />} />

@@ -426,6 +426,9 @@ hr {
 
 /* property list style*/
 .property-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   /* margin-top: 2rem; */
   padding: 20px;
   background-color: #ffffff;
@@ -435,9 +438,33 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
-.property-list-cartigories {
+.property-list-cartigories-btn-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
+}
+.cart-btn {
+  /* width: 75px; */
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: 500;
+  color: #808191;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+.cart-btn-active {
+  color: #fcfcfc;
+  background-color: #475be8;
+}
+/* .property-list-main{
+  margin-top: 2rem;
+} */
+.property-img-container img{
+  max-width: 329px;
+  /* max-width: 100%; */
+  /* height: auto; */
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
 }
 /* property list end*/
