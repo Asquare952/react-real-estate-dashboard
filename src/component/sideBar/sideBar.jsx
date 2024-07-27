@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 // import SideBarData from "./utils/sidebardata";
 import { MdClose } from "react-icons/md";
 function SideBar({ aside, value, setValue }) {
-  const {} = aside[value];
   return (
     <>
       <aside className="sideBar">

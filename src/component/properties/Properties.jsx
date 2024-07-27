@@ -12,8 +12,8 @@ const Properties = ({ propertyList, value }) => {
     slidesToShow: 3,
     slidesToScroll: 2,
     initialSlide: 0,
-    autoplay: true,
-    cssEase: "linear",
+    // autoplay: true,
+    // cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
@@ -21,7 +21,15 @@ const Properties = ({ propertyList, value }) => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          // dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          // initialSlide: 2,
         },
       },
       {
@@ -29,7 +37,7 @@ const Properties = ({ propertyList, value }) => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
+          // initialSlide: 2,
         },
       },
       {

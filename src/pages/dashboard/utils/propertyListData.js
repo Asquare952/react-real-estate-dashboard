@@ -7,7 +7,7 @@ const propertyList = [
         name: "Star Sun Hotel & Apartment",
         location: "North Carolina, USA",
         image: "/images/popular-property-1.png",
-        price: "$500",
+        price: "$800",
       },
       {
         name: "Letdo Ji Hotel & Apartment",
@@ -19,7 +19,7 @@ const propertyList = [
         name: "Metro Jayakar Apartment",
         location: "North Carolina, USA",
         image: "/images/popular-property-property-3.png",
-        price: "$500",
+        price: "$600",
       },
       {
         name: "Star Sun Hotel & Apartment",
@@ -37,7 +37,7 @@ const propertyList = [
         name: "Metro Jayakar Apartment",
         location: "North Carolina, USA",
         image: "/images/popular-property-property-6.jpg",
-        price: "$500",
+        price: "$1000",
       },
     ],
   },

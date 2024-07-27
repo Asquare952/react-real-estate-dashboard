@@ -51,7 +51,12 @@ const Dashboard = () => {
             {/* total revenue */}
             <article className="total-revenue-span-2 grid-item">
               <div className="total-revenue-head">
-                <p className="total-revenue-title">Total Revenue</p>
+                <div className="total-revenue-title-container">
+                  <p className="total-revenue-title">Total Revenue</p>
+                  <div className="total-revenue-icon-container-mobile">
+                    <SlOptions className="total-revenue-icon" />
+                  </div>
+                </div>
                 <div className="total-revenue-head-right">
                   <div className="last-month">
                     <span className="eclipse-1"></span>
@@ -61,7 +66,7 @@ const Dashboard = () => {
                     <span className="eclipse-2"></span>
                     <p>Running Month</p>
                   </div>
-                  <div className="total-revenue-icon-container">
+                  <div className="total-revenue-icon-container-desktop">
                     <SlOptions className="total-revenue-icon" />
                   </div>
                 </div>
@@ -215,7 +220,7 @@ const Dashboard = () => {
         <section>
           <div className="property-list-container">
             <div className="property-list-head">
-              <h4 className="property-list-title">Dashboard</h4>
+              <h4 className="property-list-title">Property List</h4>
               <div className="property-list-cartigories-main-container">
                 <BtnPropertyList
                   propertyList={property}
