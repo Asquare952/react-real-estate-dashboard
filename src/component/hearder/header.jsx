@@ -1,28 +1,17 @@
+import React from "react";
 import { FaRegBell } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
 import { IoMdMenu } from "react-icons/io";
 import ProfileImg from "../../assets/Profile image.png";
 // import { useState } from "react";
-const Header = () => {
-  // const [sideBar, setSideBar] = useState(false);
-  // const [searchInput, setSearchInput] = useState(false);
-  // const [profileDropdown, setProfileDropdown] = useState(false);
-  // const showSideBar = () => {
-  //   setSideBar(!sideBar);
-  // };
-  // const showSearchInput = () => {
-  //   setSearchInput(!searchInput);
-  // };
-  // const showProfileDropdown = () => {
-  //   setProfileDropdown(!profileDropdown);
-  // };
+const Header = ({showSidebar}) => {
   return (
     <>
       <header className="header">
         <section className="header-content">
           <div className="search-input-menubar">
             <div className="menubar-icon-container">
-            <IoMdMenu className="menubar-icon" />
+            <IoMdMenu className="menubar-icon" onClick={showSidebar}/>
             </div>
             <div className="mobile-searchicon-container">
             <CiSearch className="mobile-search-icon"/>

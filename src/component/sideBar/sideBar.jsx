@@ -2,20 +2,19 @@ import React from "react";
 import "./sideBar.css";
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-// import { useState } from "react";
-// import SideBarData from "./utils/sidebardata";
 import { MdClose } from "react-icons/md";
-function SideBar({ aside, value, setValue }) {
+
+function SideBar({ aside, value, setValue, sideBar, closesidebar }) {
   return (
     <>
-      <aside className="sideBar">
+      <aside id="sidebar" className={sideBar ? "show-sidebar" : ""}>
         <section className="sidebar-content">
           <div className="logo-container">
             <a className="logo" href="/">
               <img src={Logo} alt="logo" />
               <span>Yariga</span>
             </a>
-            <MdClose className="close-icon" />
+            <MdClose className="close-icon"  onClick={closesidebar}/>
           </div>
 
           <nav className="nav-container">

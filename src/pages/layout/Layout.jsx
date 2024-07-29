@@ -8,11 +8,24 @@ import SideBarData from "../../utils/sidebardata";
 const Layout = () => {
   const [sidBarLinks, setsidBarLinks] = useState(SideBarData);
   const [value, setValue] = useState(0);
+  const [openSideBar, setSideBar] = useState(false);
+
+  const showSidebar = () => {
+    setSideBar(!openSideBar);
+  };
+  const closeSidebar = () => {
+    setSideBar(!openSideBar);
+  };
   return (
     <section className="grid-container">
-      {/* <Router /> */}
-      <Hearder />
-      <SideBar aside={sidBarLinks} setValue={setValue} value={value} />
+      <Hearder showSidebar={showSidebar} />
+      <SideBar
+        aside={sidBarLinks}
+        setValue={setValue}
+        value={value}
+        sideBar={openSideBar}
+        closesidebar={closeSidebar}
+      />
       <Main aside={sidBarLinks} value={value} />
     </section>
   );
