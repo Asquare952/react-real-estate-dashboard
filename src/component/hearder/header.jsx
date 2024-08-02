@@ -13,7 +13,7 @@ const Header = ({showSidebar}) => {
             <div className="menubar-icon-container">
             <IoMdMenu className="menubar-icon" onClick={showSidebar}/>
             </div>
-            <div className="mobile-searchicon-container">
+            <div className="mobile-search-icon-container">
             <CiSearch className="mobile-search-icon"/>
             </div>
             <div className="desktop-search-input">

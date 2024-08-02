@@ -1,9 +1,8 @@
 import React from "react";
-import "./sideBar.css";
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { MdClose } from "react-icons/md";
-
+import DarkMode from "../darkmode/DarkMode";
 function SideBar({ aside, value, setValue, sideBar, closesidebar }) {
   return (
     <>
@@ -14,11 +13,11 @@ function SideBar({ aside, value, setValue, sideBar, closesidebar }) {
               <img src={Logo} alt="logo" />
               <span>Yariga</span>
             </a>
-            <MdClose className="close-icon"  onClick={closesidebar}/>
+            <MdClose className="close-icon" onClick={closesidebar} />
           </div>
 
           <nav className="nav-container">
-            <ul className="sidebar-link">
+            <ul className="sidebar-link" onClick={closesidebar}>
               {aside.map((item, index) => {
                 return (
                   <li
@@ -35,6 +34,7 @@ function SideBar({ aside, value, setValue, sideBar, closesidebar }) {
               })}
             </ul>
           </nav>
+          <DarkMode />
         </section>
       </aside>
     </>

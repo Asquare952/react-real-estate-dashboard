@@ -3,17 +3,19 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { NextArrow } from "../custumeSliderArrow/SliderArrow";
+import { PrevArrow } from "../custumeSliderArrow/SliderArrow";
 // import Slideer from "../slider/Slideer";
 const Properties = ({ propertyList, value }) => {
   var settings = {
-    // dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 2,
     initialSlide: 0,
-    // autoplay: true,
-    // cssEase: "linear",
+    arrows: false,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -21,7 +23,6 @@ const Properties = ({ propertyList, value }) => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          // dots: true,
         },
       },
       {
@@ -29,7 +30,6 @@ const Properties = ({ propertyList, value }) => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          // initialSlide: 2,
         },
       },
       {
@@ -37,7 +37,6 @@ const Properties = ({ propertyList, value }) => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          // initialSlide: 2,
         },
       },
       {

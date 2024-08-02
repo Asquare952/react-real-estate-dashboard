@@ -1,8 +1,9 @@
+import "./review.css"
 const Review = () => {
   return ( 
     <>
     <section>
-      <h2>Review</h2>
+      <h2 className="review-title">Review</h2>
     </section>
     </>
    );

@@ -12,6 +12,7 @@ import BtnPropertyList from "../../component/propertylistBtns/ButtonPropertyList
 import propertyList from "./utils/propertyListData";
 import Slideer from "../../component/slider/Slideer";
 import Properties from "../../component/properties/Properties";
+import { BarChartOne } from "../../component/charts/BarChartOne";
 
 const Dashboard = () => {
   const [cardData, setcardData] = useState(HeadData);
@@ -84,6 +85,10 @@ const Dashboard = () => {
                     <span className="month">Than Last Month</span>
                   </div>
                 </div>
+              </div>
+
+              <div className="chart-container">
+                <BarChartOne />
               </div>
             </article>
             {/* total revenue end*/}
@@ -186,7 +191,7 @@ const Dashboard = () => {
             {/* latest sales */}
             <article className="latest-sales grid-item">
               <div className="latest-sales-head">
-                <p className="latest-sales-title">Top Agent</p>
+                <p className="latest-sales-title">Latest Sales</p>
                 <div className="arrow-right-container">
                   <GoArrowRight className="arrow-right-icon" />
                 </div>

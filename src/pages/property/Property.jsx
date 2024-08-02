@@ -1,8 +1,9 @@
+import "./property.css"
 const Property = () => {
   return ( 
     <>
     <section>
-      <h2>Property</h2>
+      <h2 className="property-title">Property</h2>
     </section>
     </>
    );

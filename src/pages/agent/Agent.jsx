@@ -1,8 +1,9 @@
+import "./agent.css"
 const Agent = () => {
   return ( 
     <>
     <section>
-      <h2>Agent</h2>
+      <h2 className="agent-title">Agent</h2>
     </section>
     </>
    );
