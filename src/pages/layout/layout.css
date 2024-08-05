@@ -141,7 +141,7 @@
 .show-sidebar {
   display: inline !important;
   position: absolute;
-  z-index: 12 !important;
+  z-index: 999 !important;
 }
 .close-icon {
   color: var(--close-menu-crl);
