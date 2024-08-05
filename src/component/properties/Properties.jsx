@@ -13,7 +13,7 @@ const Properties = ({ propertyList, value }) => {
     slidesToShow: 3,
     slidesToScroll: 2,
     initialSlide: 0,
-    arrows: false,
+    arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [

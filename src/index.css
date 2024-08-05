@@ -6,12 +6,14 @@
   --bg-cards: #ffffff;
   --bg-veiwall-btn: #ffffff;
   --bg-parag-span-link-crl: #475be8;
-  --bg-price-crl-2: #dadefa;
+  --bg-property-sales-price: #dadefa;
   --bg-ellipse-1: #6c5dd3;
   --bg-ellipse-2: #cfc8ff;
   --bg-ellipse-3: #475be8;
   --bg-ellipse-arrow-up-crl: #fcfcfc;
-  --filter-btn-bg-crl: #475be8;
+  --bg-filter-btn: #F7F7F7;
+  --bg-filter-btn-active-hover: #475be8;
+  --bg-slider-container: #ffff;
 
   /* text colors */
   --search-icon-crl: #808191;
@@ -29,7 +31,10 @@
   --price-crl-2: #475be8;
   --menu-icon-crl: #000000;
   --close-menu-crl: #000000;
-  --filter-btn-crl: #475be8;
+  --filter-btn-crl: #808191;
+  --filter-btn-active-hover-crl: #FCFCFC;
+  --property-sales-price-crl: #475BE8; 
+  --slider-icon-crl: #11142D;
 }
 
 [data-theme="dark-theme"] {
@@ -41,11 +46,13 @@
   --bg-cards: #1a1d1f;
   --bg-veiwall-btn: #1a1d1f;
   --bg-parag-span-link-crl: #475be8;
-  --bg-price-crl-2: #dadefa;
+  --bg-property-sales-price: #111315;
   --bg-ellipse-1: #6c5dd3;
   --bg-ellipse-2: #cfc8ff;
   --bg-ellipse-3: #475be8;
-  --filter-btn-bg-crl: #475be8;
+  --bg-filter-btn: #111315;
+  --bg-filter-btn-active-hover: #475be8;
+  --bg-slider-container: #111315;
 
   /* text colors */
   --search-icon-crl: #6F767E;
@@ -63,7 +70,10 @@
   --filter-btn-crl: #808191;
   --menu-icon-crl: #ffffff;
   --close-menu-crl: #ffffff;
-  --filter-btn-crl: #475be8;
+  --filter-btn-crl: #6F767E;
+  --property-sales-price-crl: #475BE8; 
+  --slider-icon-crl: #FCFCFC;
+
 }
 [data-theme="light-theme"] {
   --bg-body: #ffff;
@@ -74,11 +84,15 @@
   --bg-veiwall-btn: #ffffff;
   --bg-parag-span-link-crl: #475be8;
   --bg-price-crl-1: #111315;
+  --bg-property-sales-price: #dadefa;
   --bg-ellipse-1: #6c5dd3;
   --bg-ellipse-2: #cfc8ff;
   --bg-ellipse-3: #475be8;
   --bg-ellipse-arrow-up-crl: #fcfcfc;
-  --filter-btn-bg-crl: #475be8;
+  --bg-filter-btn: #F7F7F7;
+  --bg-filter-btn-active-hover: #475be8;
+  --bg-slider-container: #ffff;
+
 
 
   /*  */
@@ -96,7 +110,10 @@
   --price-crl-2: #475be8;
   --menu-icon-crl: #000000
   --close-menu-crl: #000000;
-  --filter-btn-crl: #475be8;
+  --filter-btn-crl: #808191;
+  --filter-btn-active-hover-crl: #FCFCFC;
+  --property-sales-price-crl: #475BE8; 
+  --slider-icon-crl: #11142D;
 }
 * {
   padding: 0;

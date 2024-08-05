@@ -1,22 +1,16 @@
-export const NextArrow = (props) => {
-  const { className, style, onClick } = props;
+import * as  MdIcon from "react-icons/md";
+export const NextArrow = ({ onClick }) => {
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "white",  }}
-      onClick={onClick}
-    />
+    <button className="arrow-container right" onClick={onClick}>
+      <MdIcon.MdOutlineKeyboardArrowRight className="next-arrow-icon " />
+    </button>
   );
 };
 
-
-export const PrevArrow = (props) => {
-  const { className, style, onClick } = props;
+export const PrevArrow = ({ onClick }) => {
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "white" }}
-      onClick={onClick}
-    />
+    <button className="arrow-container left" onClick={onClick}>
+      <MdIcon.MdOutlineKeyboardArrowLeft className="prev-arrow-icon" />
+    </button>
   );
 };

@@ -10,7 +10,6 @@ import { IoIosArrowRoundUp } from "react-icons/io";
 import { SlOptionsVertical } from "react-icons/sl";
 import BtnPropertyList from "../../component/propertylistBtns/ButtonPropertyList";
 import propertyList from "./utils/propertyListData";
-import Slideer from "../../component/slider/Slideer";
 import Properties from "../../component/properties/Properties";
 import { BarChartOne } from "../../component/charts/BarChartOne";
 
@@ -237,7 +236,6 @@ const Dashboard = () => {
 
             <div className="property-list-main">
               <Properties propertyList={property} value={value} />
-              <Slideer />
             </div>
           </div>
         </section>

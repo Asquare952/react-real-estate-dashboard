@@ -3,10 +3,10 @@ import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 import DarkMode from "../darkmode/DarkMode";
-function SideBar({ aside, value, setValue, sideBar, closesidebar }) {
+function SideBar({ aside, value, setValue, sideBar, closesidebar, }) {
   return (
     <>
-      <aside id="sidebar" className={sideBar ? "show-sidebar" : ""}>
+      <aside id="sidebar"  className={sideBar ? "show-sidebar" : ""}>
         <section className="sidebar-content">
           <div className="logo-container">
             <a className="logo" href="/">
