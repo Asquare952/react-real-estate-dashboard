@@ -18,27 +18,27 @@ const Layout = () => {
   };
 
 
-  // let sidBarRef = useRef();
+  let sidBarRef = useRef();
 
-  // useEffect(() => {
-  //   let myHandler = (event) => {
-  //     if (!sidBarRef.current.contains(event.target)) {
-  //     setOpenSideBar(false)
-  //     }
-  //   };
+  useEffect(() => {
+    let myHandler = (event) => {
+      if (!sidBarRef.current.contains(event.target)) {
+      setOpenSideBar(false)
+      }
+    };
 
-  //   document.addEventListener("mousedown", myHandler);
+    document.addEventListener("mousedown", myHandler);
 
-  //   return () => {
-  //     document.removeEventListener("mousedown", myHandler);
-  //   };
-  // });
+    return () => {
+      document.removeEventListener("mousedown", myHandler);
+    };
+  });
 
   return (
     <section className="grid-container">
       <Hearder showSidebar={showSidebar} />
       <SideBar
-        // clickOutside={sidBarRef}
+        clickOutside={sidBarRef}
         aside={sidBarLinks}
         setValue={setValue}
         value={value}
