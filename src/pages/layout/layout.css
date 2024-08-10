@@ -141,7 +141,7 @@
 .show-sidebar {
   display: inline !important;
   position: absolute;
-  z-index: 999 !important;
+  z-index: 1000 !important;
 }
 .close-icon {
   color: var(--close-menu-crl);
@@ -207,7 +207,7 @@
 @media screen and (max-width: 992px) {
   #sidebar {
     display: none;
-    width: 300px;
+    width: 280px;
   }
   .close-icon {
     display: inline;

@@ -328,6 +328,9 @@ hr {
   cursor: pointer;
 }
 .total-customers-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 3rem;
 }
 .total-customers {
@@ -363,6 +366,9 @@ hr {
   color: var(--parag-span-crl-2);
 }
 .new-customers-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 3rem;
 }
 .new-customers {
@@ -566,17 +572,19 @@ hr {
   font-size: 25px;
   color: var(--slider-icon-crl);
 }
-/* .right{
-  position: absolute;
-  left: 230px;
-  top: 50px;
+@media screen and (min-width: 768px) {
+  .right{
+    position: absolute;
+    right: -13px;
+    top: 90px;
+  }
+  .left{
+    position: absolute;
+    left: -15px;
+    top: 80px;
+    z-index: 999;
+  }
 }
-.left{
-  position: absolute;
-  left: -15px;
-  top: 50px;
-  z-index: 999;
-} */
 @media screen and (min-width: 540px) {
   .property-list-head {
     display: flex;
@@ -588,34 +596,6 @@ hr {
     display: flex;
     align-items: center;
     gap: 15px;
-  }
-}
-/* @media screen and (min-width: 375px) {
-  .right{
-    position: absolute;
-    left: 280px;
-    right: -13px;
-    top: 65px;
-  }
-  .left{
-    position: absolute;
-    left: -15px;
-    top: 70px;
-    z-index: 999;
-  }
-} */
-@media screen and (min-width: 768px) {
-  .right{
-    position: absolute;
-    /* left: 245px; */
-    right: -13px;
-    top: 90px;
-  }
-  .left{
-    position: absolute;
-    left: -15px;
-    top: 80px;
-    z-index: 999;
   }
 }
 @media screen and (min-width: 360px) {
